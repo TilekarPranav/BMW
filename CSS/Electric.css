@@ -1,0 +1,159 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  font-weight: bold lighter;
+}
+
+.custom-dropdown {
+  left: 50% !important;
+  transform: translateX(-50%);
+  min-width: 250px;
+  height: 60vh;
+  width: 215vh;
+  padding-top: 60px;
+  padding-left: 120px;
+}
+
+.dropdown-item:hover {
+  color: blue;
+  background-color: white;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 18vh;
+  height: 100%;
+  padding-left: 5%;
+  border-radius: 0%;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  height: 45px;
+  width: 22%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 0%;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card.text-bg-dark {
+  border: none;
+  border-radius: 0;
+}
+
+.card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  object-fit: cover;
+  padding-top: 50px;
+  width: 700px;
+  height: 400px;
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 10px;
+  margin-bottom: auto;
+  padding-bottom: 20px;
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  color: rgb(97, 97, 97);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.footer-icon i {
+  font-size: 1.3rem;
+}
+
+.footer-icon span {
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-top: 2px;
+}
+
+.footer-icon::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+
+.footer-icon:hover::after,
+.footer-icon:visited::after {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    width: auto;
+    font-size: 0.9rem;
+  }
+
+  video {
+    height: auto;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .custom-dropdown {
+    width: 150vh;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-dropdown {
+    width: 120vh;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-dropdown {
+    width: 100%;
+    padding-left: 15px;
+  }
+}

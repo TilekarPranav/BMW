@@ -1,0 +1,125 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.navbar a {
+  font-weight: bold lighter;
+}
+
+.custom-dropdown {
+  left: 50% !important;
+  transform: translateX(-50%);
+  min-width: 250px;
+  height: 60vh;
+  width: 215vh;
+  padding-top: 60px;
+  padding-left: 120px;
+}
+
+.dropdown-item:hover {
+  color: blue;
+  background-color: white;
+}
+
+.image-slider-box {
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: white;
+  text-align: left;
+  margin: 30px auto;
+}
+
+.slider-container {
+  flex: 0 0 30%;
+  display: flex;
+  width: 1200px; 
+  height: 100%;
+}
+
+.slider-container img {
+  width: 300px; 
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.description {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  border-top: 1px solid white;
+}
+
+.image-slider-box:hover .slider-container {
+  animation: slideImages 9s linear infinite;
+}
+
+@keyframes slideImages {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-300px); }
+  50% { transform: translateX(-600px); }
+  75% { transform: translateX(-900px); }
+  100% { transform: translateX(0); }
+}
+
+.image-slider-box:hover .slider-container {
+  animation: slideForward 9s linear forwards;
+}
+
+@keyframes slideForward {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-300px); }
+  66% { transform: translateX(-600px); }
+  100% { transform: translateX(-900px); }
+}
+
+@media (max-width: 1200px) {
+  .custom-dropdown {
+    width: 90vw; 
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .image-slider-box {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-dropdown {
+    width: 100%;
+    left: 0 !important;
+    transform: none;
+    padding-left: 10px;
+  }
+
+  .slider-container {
+    width: max-content;
+    overflow-x: auto;
+  }
+
+  .slider-container img {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-slider-box {
+    width: 90%;
+    height: auto;
+  }
+}

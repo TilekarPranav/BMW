@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW Models Slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/Buy.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-transparent position-relative">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark" href="../index.html">
+                    <img src="https://www.bmw.in/content/dam/bmw/common/images/logo-icons/BMW/BMW_Grey-Colour_RGB.SVG.asset.1697707041685.SVG"
+                        alt="BMW" width="38" height="34"> BMW
+                </a>
+                <button title="title" class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link text-dark" href="Models.html">Models</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="Electric.html">Electric</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="Configurator.html">Configurator</a>
+                        </li>
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Visit
+                                Online Shop</a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li>
+                                    <h6 class="dropdown-header">Shop Online</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="Buy.html">Buy New Vehicle</a></li>
+                                <li><a class="dropdown-item" href="Book.html">Pre-Book and Exclusive Editions</a></li>
+                                <li><a class="dropdown-item" href="Configurator.html">Configure Your Own</a></li>
+                                <li><a class="dropdown-item" href="Offers.html">Current Offers</a></li>
+                                <li><a class="dropdown-item" href="Store.html">BMW Connected Drive Store</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link text-dark" href="Login.html"><i
+                                    class="fa-solid fa-user"></i></a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#"><i
+                                    class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#"><i
+                                    class="fa-solid fa-heart"></i></a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#"><i
+                                    class="fa-solid fa-location-dot"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <h3 class="mx-4 fw-light mt-5 mb-0">BMW Vehicle Finder</h3>
+    <small class="mx-4 fw-light">Drive home your dream BMW.</small>
+    <div class="row mx-3">
+        <div class="col-md-4">
+            <div class="image-slider-box">
+                <div class="slider-container">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGU%254pdW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5oKorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdd8syJR0aWAyFnOauAyJRy8cYicHFj%25MbnMdQAtyJGy5QJNrQ%25r9Y3FW8zWuDAbqogqaabdl3ilUE40cRScH48gMbnMdgmKyJGy5Q3SrQ%25r98R5W8zWuBwoqogqaGhJl3ilU%2575cRScHemBMbnMdJ5SyJGy576irQ%25r9019W8zWunsQqogqaJh5l3ilUQTzcRScHzD7MbnMdgCKyJGy57RErQ%25r9snYW8zWuBJCqogqaYIQl3ilUEF5cRScH7o3Mb3huCJit5W7%25Q95IW8JfQiAKq0zoDJHqoQUyFnHg9"
+                        alt="Image 1">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFne5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaGCOHrQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNd8s8yJRIPPMESVQ1%253Fhs3%25cRot7Z%25z315W7%253ubDHHQmMb37ur1MESVu91Mb3MQlBglUEFGcRScHJ12MbnMdJbtyJGy5BoErQ%25r9K1RW8zWuuRHqogqaYC7l3ilUCQzcRScHzesMbnMdJoiyJGy5Q3drQ%25r90v8W8zWunxbqogqaGjdl3ilU4e0cRScHbdiMbnMdjIgyJGy5765rQ%25r9SmJW8zWubxdqogqaJh%25l3ilU%25KjcRScHzDsMbnMdj3YyJGy5mSBrQ%25r90bDW8zWuBNJqogqaYEdl3ilUj8ocRox9Dbg2drjGJ5dNrQbpJg1sW7%258KbUW8JaMESUz5"
+                        alt="Image 2">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnz5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaGCOHrQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNd8s8yJRIPPMESnQr4axb7Gl382jTG%25o6drjGo9RKUUJecRoj9y6cYiw956cRocJq0zqaYEnl3ilUb6AcRScHbR2MbnMd08YyJGy5s63rQ%25r993UW8zWuBDjqogqaDJ%25l3ilU%254mcRScHb8gMbnMdJoHyJGy57kQrQ%25r9SXRW8zWunFHqogqaC47l3ilURHgcRScHFNzMbnMdjIdyJGy5iebrQ%25r9RXHW8zWubxGqogqaGsFl3ilU%25KmcRScHFoBMbnMdei0yJGy57RKrQ%25r90tbW8zWuBYHqogqaFQ8l38X5KRzAHyFnbdHtyJRObz6mrjGQsRarQbucYia%25d"
+                        alt="Image 4">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnJj9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGU%254pdW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5oKorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdd8syJR0aWAyFnOauAyJRy8cYicHFj%25MbnMdQAtyJGy5QJNrQ%25r9Y3FW8zWuDAbqogqaabdl3ilUE40cRScH48gMbnMdgmKyJGy5Q3SrQ%25r98R5W8zWuBwoqogqaGhJl3ilU%2575cRScHemBMbnMdJ5SyJGy576irQ%25r9019W8zWunsQqogqaJh5l3ilUQTzcRScHzD7MbnMdgCKyJGy57RErQ%25r9snYW8zWuBJCqogqaYIQl3ilUEF5cRScH7o3Mb3huCJit5W7%25Q95IW8JfQiAKq0zoDJHqoQUyFnHg9"
+                        alt="Image 3">
+                </div>
+                <div class="description">
+                    <h4 class="fw-light mb-0">BMW X3 xDrive20d M Sport</h4>
+                    <p class="fw-bold mb-1"
+                        style="background-color: black; color: white; padding: 3px; font-size: xx-small; width: 42px;">
+                        New Car</p>
+                    <div class="mx-2 mt-3 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">MONTHLY INSTALMENT</p>
+                            <p class="mb-0">$88,690</p>
+                        </div>
+                        <div style="height: 45px; width: 1px; background-color: rgb(180, 179, 179);"></div>
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">Test Label</p>
+                            <p class="mb-0">$77,80,000</p>
+                        </div>
+                    </div>
+                    <hr class="mx-2 my-2">
+                    <div class="mx-2 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <img src="https://img.freepik.com/premium-vector/fuel-logo-design-vector-illustration_742779-131.jpg?w=900"
+                                alt="fuel" style="width: 120px; height: auto;">
+                        </div>
+                        <div class="text-start p-0">
+                            <img src="https://ksa.motory.com/images/overview_icons/transmission.png" alt="transmission"
+                                style="width: 60px; height: auto;">
+                        </div>
+                    </div>
+                    <p class="fw-light mb-1 mx-2" style="font-size: x-small;">Fuel Type Gasoline</p>
+                    <hr class="mx-2 my-2">
+                    <div class="d-flex align-items-center mx-2 mt-2">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.tOe7wRwQg5iml6U-_gq8WAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="loc" style="width: 20px; height: 20px; margin-right: 6px;">
+                        <p class="fw-bold mb-0" style="font-size: x-small;">FU Eminent Cars Pvt. Ltd. Surat</p>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center justify-content-center">
+                        <button
+                            style="width: 90%; height: 35px; font-size: medium; border: 1px solid black; border-radius: 2px; font-weight: 400;">Show
+                            Vehicle details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-slider-box">
+                <div class="slider-container">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUV3QNW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5oKorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdd3YyJR0aWAyFnOauAyJRy8cYicHbzBMbnMdjWgyJGy5BO5rQ%25r9si8W8zWuo86qogqa3V%25l3ilUUvmcRScHHeiMbnMdeoiyJGy57zprQ%25r993DW8zWunFHqogqaGjJl3ilUC4ocRScH8NiMbnMdmsYyJGy53LtrQ%25r9RXHW8zWuB5Sqogqa3Jnl3ilUj79cRScH8ZHMbnMdeiSyJGy57qErQ%25r9YpJW8zWuBJjqogqaD%25Fl3ilUbGwcRScHzo7MbnMdj3syJGy58eMrQ%25r9YaUW8zWun3CqogqaGk%25l3ilUUHecRScHFeBMbnMdeBSyJGy5isDrQ%25r98RnW8zWuob9qogqaG47l3ilU%25KBcRScHFe9MbnMdjIdyJGy536UrQ%25r98StW8zWuoYEqogqaGH7l3ilU48ecRScHF1oMbnMdg7oyJGy5i4arQ%25r90BUW8zWuu3HqogqaFQ8l3ilURK0cRox9Dbg2drjGj5dXrQbpJg1sW7%258KbUW8JaMESUz5"
+                        alt="Image 1">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFne5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnawoJtrQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNd8s8yJRIPPMESVQ1%253Fhs3%25cRot7Z%25z315W7%253ubDHHoBMb37ur1MESVu91Mb3MQlBglUR%250cRScHFrzMbnMd0VdyJGy5mgQrQ%25r98QIW8zWuowGqogqaakel3ilUU4gcRScH48gMbnMdj%25OyJGy55oKrQ%25r9SEUW8zWunFbqogqaDC8l3ilUQtgcRScHemBMbnMdoP2yJGy53LUrQ%25r90diW8zWuobSqogqaFj5l3ilUQTUcRScH4giMbnMdjWYyJGy5BObrQ%25r90bFW8zWuKGEqogqaRnvl3ilU%258jcRScHFomMbnMdQ4cyJGy5BuarQ%25r9SoDW8zWunfGqogqaaU4l3ilUE40cRScH40iMbnMdgmKyJGy5Q3SrQ%25r98R5W8zWunCjqogqaGs0l3ilUE45cRScHFNHMbnMdoIayJGy5Qi2rQ%25r98BYW8zWunUjqogqaCQ4l3ilUE68cRScHzj8MbnMdgCuyJGy570arQ%25r99oUW8zWuEJQqogqa3s7l38X5KRzAHyFnFdHLyJRObz6mrjGQsRarQbucYia%25d"
+                        alt="Image 2">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnz5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnawoJtrQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNd8s8yJRIPPMESnQr4axb7Gl382jTG%25o6drjGo9RKUU80cRoj9y6cYiw956cRocJq0zqa3G7l3ilUEy%25cRScH7wHMbnMdezJyJGy5QJNrQ%25r98vnW8zWuuf4qogqaaCzl3ilUCQzcRScHFGVMbnMdd8syJGy5iYarQ%25r9SERW8zWuKDQqogqaJ2zl3ilU4e0cRScH8ZAMbnMdoPayJGy57HgrQ%25r98RiW8zWuEFdqogqaJhal3ilUCzgcRScHFrBMbnMd0VRyJGy57RErQ%25r9snYW8zWu3SkqogqaGQFl3ilUE8ecRScHJClMbnMd09uyJGy5i8KrQ%25r9SpnW8zWuuaCqogqaYC7l3ilUC7gcRScHzesMbnMdJoiyJGy5Q3drQ%25r9SDFW8zWunm7qogqaYCdl3ilUEtUcRScH8NuMbnMdJgAyJGy5Q0BrQ%25r9SaFW8zWuDJCqogqaYIQl3ilU%25FQcRScHzD9MbnMdj7uyJGy558arQ%25r9YbJW8zWuomjqoQLds3%251UMESEHUPMb3VR%25IeyFnJm3uyJR9lBguGH"
+                        alt="Image 3">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnJj9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUV3QNW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5oKorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdd3YyJR0aWAyFnOauAyJRy8cYicHbzBMbnMdjWgyJGy5BO5rQ%25r9si8W8zWuo86qogqa3V%25l3ilUUvmcRScHHeiMbnMdeoiyJGy57zprQ%25r993DW8zWunFHqogqaGjJl3ilUC4ocRScH8NiMbnMdmsYyJGy53LtrQ%25r9RXHW8zWuB5Sqogqa3Jnl3ilUj79cRScH8ZHMbnMdeiSyJGy57qErQ%25r9YpJW8zWuBJjqogqaD%25Fl3ilUbGwcRScHzo7MbnMdj3syJGy58eMrQ%25r9YaUW8zWun3CqogqaGk%25l3ilUUHecRScHFeBMbnMdeBSyJGy5isDrQ%25r98RnW8zWuob9qogqaG47l3ilU%25KBcRScHFe9MbnMdjIdyJGy536UrQ%25r98StW8zWuoYEqogqaGH7l3ilU48ecRScHF1oMbnMdg7oyJGy5i4arQ%25r90BUW8zWuu3HqogqaFQ8l3ilURK0cRox9Dbg2drjGj5dXrQbpJg1sW7%258KbUW8JaMESUz5"
+                        alt="Image 4">
+                </div>
+                <div class="description">
+                    <h4 class="fw-light mb-0">BMW M340i xDrive</h4>
+                    <p class="fw-bold mb-1"
+                        style="background-color: black; color: white; padding: 3px; font-size: xx-small; width: 42px;">
+                        New Car</p>
+                    <div class="mx-2 mt-3 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">MONTHLY INSTALMENT</p>
+                            <p class="mb-0">$96,738</p>
+                        </div>
+                        <div style="height: 45px; width: 1px; background-color: rgb(180, 179, 179);"></div>
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">Test Label</p>
+                            <p class="mb-0">$75,90,000</p>
+                        </div>
+                    </div>
+                    <hr class="mx-2 my-2">
+                    <div class="mx-2 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <img src="https://img.freepik.com/premium-vector/fuel-logo-design-vector-illustration_742779-131.jpg?w=900"
+                                alt="fuel" style="width: 120px; height: auto;">
+                        </div>
+                        <div class="text-start p-0">
+                            <img src="https://ksa.motory.com/images/overview_icons/transmission.png" alt="transmission"
+                                style="width: 60px; height: auto;">
+                        </div>
+                    </div>
+                    <p class="fw-light mb-1 mx-2" style="font-size: x-small;">Fuel Type Gasoline</p>
+                    <hr class="mx-2 my-2">
+                    <div class="d-flex align-items-center mx-2 mt-2">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.tOe7wRwQg5iml6U-_gq8WAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="loc" style="width: 20px; height: 20px; margin-right: 6px;">
+                        <p class="fw-bold mb-0" style="font-size: x-small;">SA Navnit Motors Pvt. Ltd. Juhu</p>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center justify-content-center">
+                        <button
+                            style="width: 90%; height: 35px; font-size: medium; border: 1px solid black; border-radius: 2px; font-weight: 400;">Show
+                            Vehicle details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-slider-box">
+                <div class="slider-container">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUV32BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5gSvrQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdd8RyJR0aWAyFnOauAyJRy8cYicHbzBMbnMd0VayJGy57qirQ%25r9si8W8zWuo86qogqa3V%25l3ilUUvmcRScHFeBMbnMdeoiyJGy5BoorQ%25r98RnW8zWuDbJqogqaYSvl3ilURQacRScHFQmMbnMdgBuyJGy5i4FrQ%25r9KDJW8zWunFbqogqaDC8l3ilUE45cRScHemBMbnMdQYSyJGy5sKnrQ%25r9sRcW8zWuBAuqogqaJh5l3ilUQt9cRScHb8%25MbnMdJgAyJGy5iRErQ%25r9snGW8zWunNoqogqa3EFl3ilUEy0cRScHFoBMbnMdei0yJGy58gprQ%25r90bDW8zWuDJCqogqaYIQl3ilUEF5cRScHbD3MbnMd09uyJGy5BRbrQbZUe8nIulBgbauDl38vontCcYiR485cRodW7%255Sa"
+                        alt="Image 1">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUV32BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5gSvrQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdd8RyJR0aWAyFnOauAyJRy8cYicHbzBMbnMd0VayJGy57qirQ%25r9si8W8zWuo86qogqa3V%25l3ilUUvmcRScHFeBMbnMdeoiyJGy5BoorQ%25r98RnW8zWuDbJqogqaYSvl3ilURQacRScHFQmMbnMdgBuyJGy5i4FrQ%25r9KDJW8zWunFbqogqaDC8l3ilUE45cRScHemBMbnMdQYSyJGy5sKnrQ%25r9sRcW8zWuBAuqogqaJh5l3ilUQt9cRScHb8%25MbnMdJgAyJGy5iRErQ%25r9snGW8zWunNoqogqa3EFl3ilUEy0cRScHFoBMbnMdei0yJGy58gprQ%25r90bDW8zWuDJCqogqaYIQl3ilUEF5cRScHbD3MbnMd09uyJGy5BRbrQbZUe8nIulBgbauDl38vontCcYiR485cRodW7%255Sa"
+                        alt="Image 2">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnz5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnawoA0rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNdzikyJRIPPMESnQr4axb7Gl382jTG%25o6drjGo9RKUUJocRoj9y6cYiw956cRocJq0zqa3G7l3ilUjv9cRScHFrzMbnMdezJyJGy5QJNrQ%25r98vnW8zWuuf4qogqaYC7l3ilUCQzcRScH7QQMbnMdJoiyJGy5s3RrQ%25r90gfW8zWuob9qogqaYb4l3ilU%2575cRScHzDYMbnMdmsRyJGy5iY3rQ%25r9sKJW8zWuBDHqogqaC47l3ilUb0gcRScHemiMbnMdeoqyJGy5765rQ%25r9RXHW8zWubAdqogqa3Jnl3ilUR%256cRScHzoBMbnMdeiSyJGy5i2QrQ%25r98BYW8zWuBcjqogqaYQ7l3ilUCzjcRScHJ%25VMbnMdj3syJGy5sRKrQ%25r90tbW8zWuBYHqogqa3s8l3ilUjd5cRScH7o3Mb3huCJit5W7%25395sW8JfQiAKq0zoDJHqoQUyFnHg9"
+                        alt="Image 3">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnJj9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUV32BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5gSvrQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdd8RyJR0aWAyFnOauAyJRy8cYicHbzBMbnMd0VayJGy57qirQ%25r9si8W8zWuo86qogqa3V%25l3ilUUvmcRScHFeBMbnMdeoiyJGy5BoorQ%25r98RnW8zWuDbJqogqaYSvl3ilURQacRScHFQmMbnMdgBuyJGy5i4FrQ%25r9KDJW8zWunFbqogqaDC8l3ilUE45cRScHemBMbnMdQYSyJGy5sKnrQ%25r9sRcW8zWuBAuqogqaJh5l3ilUQt9cRScHb8%25MbnMdJgAyJGy5iRErQ%25r9snGW8zWunNoqogqa3EFl3ilUEy0cRScHFoBMbnMdei0yJGy58gprQ%25r90bDW8zWuDJCqogqaYIQl3ilUEF5cRScHbD3MbnMd09uyJGy5BRbrQbZUe8nIulBgbauDl38vontCcYiR485cRodW7%255Sa"
+                        alt="Image 4">
+                </div>
+                <div class="description">
+                    <h4 class="fw-light mb-0">BMW 330LI</h4>
+                    <p class="fw-bold mb-1"
+                        style="background-color: black; color: white; padding: 3px; font-size: xx-small; width: 42px;">
+                        New Car</p>
+                    <div class="mx-2 mt-3 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">MONTHLY INSTALMENT</p>
+                            <p class="mb-0">$70,992</p>
+                        </div>
+                        <div style="height: 45px; width: 1px; background-color: rgb(180, 179, 179);"></div>
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">Test Label</p>
+                            <p class="mb-0">$62,60,000</p>
+                        </div>
+                    </div>
+                    <hr class="mx-2 my-2">
+                    <div class="mx-2 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <img src="https://img.freepik.com/premium-vector/fuel-logo-design-vector-illustration_742779-131.jpg?w=900"
+                                alt="fuel" style="width: 120px; height: auto;">
+                        </div>
+                        <div class="text-start p-0">
+                            <img src="https://ksa.motory.com/images/overview_icons/transmission.png" alt="transmission"
+                                style="width: 60px; height: auto;">
+                        </div>
+                    </div>
+                    <p class="fw-light mb-1 mx-2" style="font-size: x-small;">Fuel Type Gasoline</p>
+                    <hr class="mx-2 my-2">
+                    <div class="d-flex align-items-center mx-2 mt-2">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.tOe7wRwQg5iml6U-_gq8WAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="loc" style="width: 20px; height: 20px; margin-right: 6px;">
+                        <p class="fw-bold mb-0" style="font-size: x-small;">SA+BPS Infinity Cars Pvt. Ltd. Worli</p>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center justify-content-center">
+                        <button
+                            style="width: 90%; height: 35px; font-size: medium; border: 1px solid black; border-radius: 2px; font-weight: 400;">Show
+                            Vehicle details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-slider-box">
+                <div class="slider-container">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUP31BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5ioorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdJ30yJR0aWAyFnOauAyJRy8cYicHbzBMbnMdezkyJGy5BOSrQ%25r9Yi8W8zWuo86qogqaabdl3ilUCQzcRScHzN7MbnMdj%25OyJGy55oKrQ%25r9sKJW8zWuDCjqogqaR63l3ilU%2539cRScH8R4MbnMdoPayJGy5Q3grQ%25r9SbFW8zWuoHGqogqaaHJl3ilUE80cRScH4g7MbnMdgH2yJGy58gprQ%25r9SbYW8zWuBJCqogqaJh0l3ilUjd5cRScHz83MbnMdd5syJGy5isorQ%25r9RKYW8zWuBDjqogqaFjHl3ilURQzcRScHzQ5MbnMdJoHyJGy5iKnrQ%25r9SejW8zWunDjqogqaRGul3ilUQJocRScHb6oMbnMdeoqyJGy576irQ%25r9YRwW8zWuni2qogqaJ25l3ilUCQ1cRScHbz1MbnMdg9RyJGy5Q0BrQ%25r98eYW8zWuDJCqogqaYIQl3ilUEF5cRScHHJ9MbnMdjIJyJGy5BRbrQ%25r98eFW8zWuEJjqoQLds3%251UMESbHaPMb3VR%25IeyFnJm3uyJR9lBguGH"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFne5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaZo60rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNdg88yJRIPPMESVQ1%253Fhs3%25cRot7Z%25z315W7%253ubDHbo7Mb37ur1MESVu91Mb3MQlBglUR%250cRScH4%25fMbnMd0ViyJGy5BgQrQ%25r98QIW8zWuuRHqogqaDJ%25l3ilU%25tjcRScHFGVMbnMdd8syJGy5msbrQ%25r9KDFW8zWu3IoqogqaGo5l3ilUQ3CcRScH8ZuMbnMdJozyJGy5iRErQ%25r98UnW8zWuuUbqogqaYQ7l3ilUCzjcRScHzUAMbnMdQzOyJGy5iRBrQ%25r90bDW8zWubx7qogqaFHdl3ilU%25QocRScHHdmMbnMdgm8yJGy53sBrQ%25r90KFW8zWuEFUqogqa3J%25l3ilU%25JdcRScHb8UMbnMdgsSyJGy5i4FrQ%25r9SKFW8zWu3n9qogqaJb8l3ilURI8cRScH48WMbnMdjIgyJGy5B3vrQ%25r9SgAW8zWubAdqogqaDJ6l3ilUR%256cRScHz53MbnMdJ70yJGy5Q4BrQ%25r9KbDW8zWuBNJqogqaYEdl3ilUUb5cRScHFNbMbnMd03RyJGy5Q4ErQ%25r9YbFW8JPHmoG6acYiRUuZcRow3GN4MESbeo9Mb35q0z9nU"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnz5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaZo60rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNdg88yJRIPPMESnQr4axb7Gl382jTG%25o6drjGo9RKUR8jcRoj9y6cYiw956cRocJq0zqa3G7l3ilUCGpcRScH7wgMbnMd0zJyJGy5QJNrQ%25r993UW8zWuKbGqogqaG2Fl3ilUEnwcRScHHQmMbnMdemRyJGy5sKErQ%25r9oN8W8zWun8dqogqaJoDl3ilUQT9cRScHb8%25MbnMdg3YyJGy5QaSrQ%25r99aRW8zWuBJjqogqaD%25Fl3ilU%25a1cRScHJ%25VMbnMdg30yJGy57RKrQ%25r9RXjW8zWuEUHqogqaGJ8l3ilUUHecRScHzeQMbnMdom0yJGy57sErQ%25r9YEaW8zWuobGqogqaGbHl3ilURQacRScHzmiMbnMdgCEyJGy5isErQ%25r9oS5W8zWubRQqogqa3NQl3ilUCQrcRScHFNzMbnMd0okyJGy5iz1rQ%25r9R1HW8zWuKbIqogqa3GIl3ilU%25docRScHbj7MbnMdJC0yJGy5sRKrQ%25r90tbW8zWuBYHqogqaaRdl3ilUEtRcRScH7o3MbnMdJCYyJGy5BRErQbZUe8nIulBg3a9Tl38vontCcYiR485cRodW7%255Sa"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnJj9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUP31BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5ioorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdJ30yJR0aWAyFnOauAyJRy8cYicHbzBMbnMdezkyJGy5BOSrQ%25r9Yi8W8zWuo86qogqaabdl3ilUCQzcRScHzN7MbnMdj%25OyJGy55oKrQ%25r9sKJW8zWuDCjqogqaR63l3ilU%2539cRScH8R4MbnMdoPayJGy5Q3grQ%25r9SbFW8zWuoHGqogqaaHJl3ilUE80cRScH4g7MbnMdgH2yJGy58gprQ%25r9SbYW8zWuBJCqogqaJh0l3ilUjd5cRScHz83MbnMdd5syJGy5isorQ%25r9RKYW8zWuBDjqogqaFjHl3ilURQzcRScHzQ5MbnMdJoHyJGy5iKnrQ%25r9SejW8zWunDjqogqaRGul3ilUQJocRScHb6oMbnMdeoqyJGy576irQ%25r9YRwW8zWuni2qogqaJ25l3ilUCQ1cRScHbz1MbnMdg9RyJGy5Q0BrQ%25r98eYW8zWuDJCqogqaYIQl3ilUEF5cRScHHJ9MbnMdjIJyJGy5BRbrQ%25r98eFW8zWuEJjqoQLds3%251UMESbHaPMb3VR%25IeyFnJm3uyJR9lBguGH"
+                        alt="Image">
+                </div>
+                <div class="description">
+                    <h4 class="fw-light mb-0">BMW X5 xDrive30d M Sport</h4>
+                    <p class="fw-bold mb-1"
+                        style="background-color: black; color: white; padding: 3px; font-size: xx-small; width: 42px;">
+                        New Car</p>
+                    <div class="mx-2 mt-3 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">MONTHLY INSTALMENT</p>
+                            <p class="mb-0">$1,35,136</p>
+                        </div>
+                        <div style="height: 45px; width: 1px; background-color: rgb(180, 179, 179);"></div>
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">Test Label</p>
+                            <p class="mb-0">$1,12,50,000</p>
+                        </div>
+                    </div>
+                    <hr class="mx-2 my-2">
+                    <div class="mx-2 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <img src="https://img.freepik.com/premium-vector/fuel-logo-design-vector-illustration_742779-131.jpg?w=900"
+                                alt="fuel" style="width: 120px; height: auto;">
+                        </div>
+                        <div class="text-start p-0">
+                            <img src="https://ksa.motory.com/images/overview_icons/transmission.png" alt="transmission"
+                                style="width: 60px; height: auto;">
+                        </div>
+                    </div>
+                    <p class="fw-light mb-1 mx-2" style="font-size: x-small;">Fuel Type Gasoline</p>
+                    <hr class="mx-2 my-2">
+                    <div class="d-flex align-items-center mx-2 mt-2">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.tOe7wRwQg5iml6U-_gq8WAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="loc" style="width: 20px; height: 20px; margin-right: 6px;">
+                        <p class="fw-bold mb-0" style="font-size: x-small;">SA Ring Road Cars Pvt. Ltd. Whitefield SA
+                        </p>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center justify-content-center">
+                        <button
+                            style="width: 90%; height: 35px; font-size: medium; border: 1px solid black; border-radius: 2px; font-weight: 400;">Show
+                            Vehicle details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-slider-box">
+                <div class="slider-container">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUP31BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5ioorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdJ80yJR0aWAyFnOauAyJRy8cYicHbzBMbnMdezkyJGy5BOSrQ%25r9Yi8W8zWuo86qogqaabdl3ilUCQzcRScHzN7MbnMdj%25OyJGy55oKrQ%25r9sKJW8zWuDCjqogqaR63l3ilU%2539cRScH8R4MbnMdoPayJGy58iFrQ%25r98RiW8zWunJjqogqa3d%25l3ilUUdQcRScHFoBMbnMdei0yJGy5idtrQ%25r9oifW8zWunJEqogqaYQ4l3ilUQTBcRScH759MbnMdgoRyJGy559KrQ%25r9SK3W8zWubDEqogqaYC7l3ilUj7dcRScHb8gMbnMdg89yJGy5Q3drQ%25r9SDGW8zWunm7qogqaGC7l3ilUb%25acRScH8Q3MbnMdJ13yJGy5m3lrQ%25r901SW8zWuEbVqogqaGStl3ilUQt9cRScH48AMbnMdJgAyJGy5iubrQ%25r98BYW8zWuomEqogqaCQ4l3ilUE68cRScHFj9MbnMddQuyJGy576QrQ%25r9YbJW8zWuomjqogqaFQ7l38X5KRzAHyFn8dU4yJRObz6mrjGQsRarQbucYia%25d"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFne5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaZo60rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNdg88yJRIPPMESVQ1%253Fhs3%25cRot7Z%25z315W7%253ubDHbQ7Mb37ur1MESVu91Mb3MQlBglUR%250cRScH4%25fMbnMd0ViyJGy5BgQrQ%25r98QIW8zWuuRHqogqaDJ%25l3ilU%25tjcRScHFGVMbnMdd8syJGy5msbrQ%25r9KDFW8zWu3IoqogqaGo5l3ilUQ3CcRScH8ZuMbnMdQgEyJGy5Q3grQ%25r9SbFW8zWuoHGqogqaaHJl3ilUE80cRScH4g7MbnMdgH2yJGy58gprQ%25r9SbYW8zWuBJCqogqaJh0l3ilUjd5cRScHz83MbnMdd5syJGy5isorQ%25r9RKYW8zWuBDjqogqaFjHl3ilURQzcRScHzQ5MbnMdJoHyJGy5iKnrQ%25r9SejW8zWunDjqogqaRGul3ilUQJocRScHb6oMbnMdeoqyJGy576irQ%25r9YRwW8zWuni2qogqaJ25l3ilUCQ1cRScHbz1MbnMdg9RyJGy5Q0BrQ%25r98eYW8zWuDJCqogqaYIQl3ilUEF5cRScHHJ9MbnMdjIJyJGy5BRbrQ%25r98eFW8zWuEJjqoQLds3%251UMESQHaCMb3VR%25IeyFnJm3uyJR9lBguGH"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnz5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaZo60rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNdg88yJRIPPMESnQr4axb7Gl382jTG%25o6drjGo9RKURJjcRoj9y6cYiw956cRocJq0zqa3G7l3ilUCGpcRScH7wgMbnMd0zJyJGy5QJNrQ%25r993UW8zWuKbGqogqaG2Fl3ilUEnwcRScHHQmMbnMdemRyJGy5sKErQ%25r9oN8W8zWun8dqogqaJoDl3ilUQT9cRScHJzYMbnMdJozyJGy5iRErQ%25r98UnW8zWuuUbqogqaYQ7l3ilUCzjcRScHzUAMbnMdQzOyJGy5iRBrQ%25r90bDW8zWubx7qogqaFHdl3ilU%25QocRScHHdmMbnMdgm8yJGy53sBrQ%25r90KFW8zWuEFUqogqa3J%25l3ilU%25JdcRScHb8UMbnMdgsSyJGy5i4FrQ%25r9SKFW8zWu3n9qogqaJb8l3ilURI8cRScH48WMbnMdjIgyJGy5B3vrQ%25r9SgAW8zWubAdqogqaDJ6l3ilUR%256cRScHz53MbnMdJ70yJGy5Q4BrQ%25r9KbDW8zWuBNJqogqaYEdl3ilUUb5cRScHFNbMbnMd03RyJGy5Q4ErQ%25r9YbFW8JPHmoG6acYiJUuDcRow3GN4MESbeo9Mb35q0z9nU"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnJj9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUP31BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5ioorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdJ80yJR0aWAyFnOauAyJRy8cYicHbzBMbnMdezkyJGy5BOSrQ%25r9Yi8W8zWuo86qogqaabdl3ilUCQzcRScHzN7MbnMdj%25OyJGy55oKrQ%25r9sKJW8zWuDCjqogqaR63l3ilU%2539cRScH8R4MbnMdoPayJGy58iFrQ%25r98RiW8zWunJjqogqa3d%25l3ilUUdQcRScHFoBMbnMdei0yJGy5idtrQ%25r9oifW8zWunJEqogqaYQ4l3ilUQTBcRScH759MbnMdgoRyJGy559KrQ%25r9SK3W8zWubDEqogqaYC7l3ilUj7dcRScHb8gMbnMdg89yJGy5Q3drQ%25r9SDGW8zWunm7qogqaGC7l3ilUb%25acRScH8Q3MbnMdJ13yJGy5m3lrQ%25r901SW8zWuEbVqogqaGStl3ilUQt9cRScH48AMbnMdJgAyJGy5iubrQ%25r98BYW8zWuomEqogqaCQ4l3ilUE68cRScHFj9MbnMddQuyJGy576QrQ%25r9YbJW8zWuomjqogqaFQ7l38X5KRzAHyFn8dU4yJRObz6mrjGQsRarQbucYia%25d"
+                        alt="Image">
+                </div>
+                <div class="description">
+                    <h4 class="fw-light mb-0">BMW X5 xDrive40i M Sport</h4>
+                    <p class="fw-bold mb-1"
+                        style="background-color: black; color: white; padding: 3px; font-size: xx-small; width: 42px;">
+                        New Car</p>
+                    <div class="mx-2 mt-3 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">MONTHLY INSTALMENT</p>
+                            <p class="mb-0">$1,23,112</p>
+                        </div>
+                        <div style="height: 45px; width: 1px; background-color: rgb(180, 179, 179);"></div>
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">Test Label</p>
+                            <p class="mb-0">$1,10,50,000</p>
+                        </div>
+                    </div>
+                    <hr class="mx-2 my-2">
+                    <div class="mx-2 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <img src="https://img.freepik.com/premium-vector/fuel-logo-design-vector-illustration_742779-131.jpg?w=900"
+                                alt="fuel" style="width: 120px; height: auto;">
+                        </div>
+                        <div class="text-start p-0">
+                            <img src="https://ksa.motory.com/images/overview_icons/transmission.png" alt="transmission"
+                                style="width: 60px; height: auto;">
+                        </div>
+                    </div>
+                    <p class="fw-light mb-1 mx-2" style="font-size: x-small;">Fuel Type Gasoline</p>
+                    <hr class="mx-2 my-2">
+                    <div class="d-flex align-items-center mx-2 mt-2">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.tOe7wRwQg5iml6U-_gq8WAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="loc" style="width: 20px; height: 20px; margin-right: 6px;">
+                        <p class="fw-bold mb-0" style="font-size: x-small;">FU + BPS Deutsche Cars Pvt. Ltd. Faridabad
+                        </p>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center justify-content-center">
+                        <button
+                            style="width: 90%; height: 35px; font-size: medium; border: 1px solid black; border-radius: 2px; font-weight: 400;">Show
+                            Vehicle details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-slider-box">
+                <div class="slider-container">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUPi1BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5oKorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJ%25dd80yJR0aWAyFnOauAyJRy8cYicHbzBMbnMdezkyJGy57qirQ%25r9Yi8W8zWun3Jqogqa3o1l3ilUUvdcRScHbUYMbnMdd8uyJGy5i6orQ%25r9S1aW8zWuBikqogqaC47l3ilUj4JcRScH8ZuMbnMdJozyJGy5Qd3rQ%25r9S5GW8zWun9CqogqaFkJl3ilUE80cRScH4g7MbnMdgH2yJGy58gprQ%25r9SbYW8zWun9kqogqaYQ4l3ilUjGwcRScH759MbnMdgoRyJGy5sibrQ%25r99uDW8zWuDAbqogqaYC7l3ilU4tocRScH705MbnMdJoiyJGy5ioorQ%25r98R5W8zWunDjqogqaRGul3ilUE45cRScH8Q3MbnMdgmSyJGy5BiirQ%25r9SESW8zWuotJqogqaDJyl3ilUEt%25cRScHFNHMbnMdoIayJGy5Qi2rQ%25r9o5CW8zWuomUqogqaY2Tl3ilU48ecRScHF1oMbnMdg43yJGy570arQ%25r99oUW8zWuomjqoQLds3%251UMESbHaFMb3VR%25IeyFnJm3uyJR9lBguGH"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFne5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaZg60rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNd8s8yJRIPPMESVQ1%253Fhs3%25cRot7Z%25z315W7%253ubGHHQ7Mb37ur1MESVu91Mb3MQlBglUR%250cRScH4%25fMbnMdjWgyJGy5BgQrQ%25r9SobW8zWuo86qogqaakHl3ilURaBcRScHHQ9MbnMdgI8yJGy5i6urQ%25r90gfW8zWuDCjqogqaFCbl3ilUQT9cRScHb8%25MbnMdJHoyJGy5idnrQ%25r9S5DW8zWuEfbqogqaYQ7l3ilUCzjcRScHzUAMbnMdQzOyJGy5iRBrQ%25r9S5fW8zWuBJCqogqaFnvl3ilUjd5cRScHz83MbnMdmgRyJGy559KrQ%25r9K1RW8zWuBDjqogqaC28l3ilUj7dcRScHb8gMbnMdg88yJGy5Q3drQ%25r9SKFW8zWu3n9qogqaYCdl3ilUQJocRScHzeiMbnMd0ggyJGy5iYirQ%25r982bW8zWuKbMqogqaY2Gl3ilUEtUcRScH8NuMbnMdJgAyJGy58dDrQ%25r98eaW8zWuBAhqogqaCQ4l3ilUE68cRScHzCoMbnMdj7uyJGy558arQ%25r98eFW8JPHmoG6acYiRUuEcRow3GN4MESbeo9Mb35q0z9nU"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnz5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaZg60rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNd8s8yJRIPPMESnQr4axb7Gl382jTG%25o6drjGo9RnUUJjcRoj9y6cYiw956cRocJq0zqa3G7l3ilUCGpcRScHFrzMbnMd0zJyJGy5i8RrQ%25r98QIW8zWuufUqogqa3u0l3ilUUJ5cRScHzNQMbnMdgI9yJGy57zprQ%25r9KDFW8zWuEDRqogqaJh5l3ilURQGcRScHbU8MbnMdgHSyJGy5idKrQ%25r9YpRW8zWuBJjqogqaD%25Fl3ilU%25a1cRScHJ%25VMbnMdg30yJGy5idprQ%25r90bDW8zWuESkqogqaFHdl3ilU%25QocRScHez3MbnMdd5syJGy5s63rQ%25r90KFW8zWuDAQqogqaFjHl3ilURQzcRScHzQQMbnMdJoHyJGy5isErQ%25r9oS5W8zWuBDHqogqaJb8l3ilU%254gcRScH7zzMbnMdgBgyJGy5QARrQ%25r9sRcW8zWuBAnqogqaY2al3ilUQt9cRScHbz1MbnMdQHKyJGy5Q4urQ%25r901xW8zWuDJCqogqaYIQl3ilU%25D8cRScHFj9MbnMddQuyJGy5Q4ErQbZUe8nIulBg3a9Yl38vontCcYiR485cRodW7%255Sa"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnJj9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUPi1BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5oKorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJ%25dd80yJR0aWAyFnOauAyJRy8cYicHbzBMbnMdezkyJGy57qirQ%25r9Yi8W8zWun3Jqogqa3o1l3ilUUvdcRScHbUYMbnMdd8uyJGy5i6orQ%25r9S1aW8zWuBikqogqaC47l3ilUj4JcRScH8ZuMbnMdJozyJGy5Qd3rQ%25r9S5GW8zWun9CqogqaFkJl3ilUE80cRScH4g7MbnMdgH2yJGy58gprQ%25r9SbYW8zWun9kqogqaYQ4l3ilUjGwcRScH759MbnMdgoRyJGy5sibrQ%25r99uDW8zWuDAbqogqaYC7l3ilU4tocRScH705MbnMdJoiyJGy5ioorQ%25r98R5W8zWunDjqogqaRGul3ilUE45cRScH8Q3MbnMdgmSyJGy5BiirQ%25r9SESW8zWuotJqogqaDJyl3ilUEt%25cRScHFNHMbnMdoIayJGy5Qi2rQ%25r9o5CW8zWuomUqogqaY2Tl3ilU48ecRScHF1oMbnMdg43yJGy570arQ%25r99oUW8zWuomjqoQLds3%251UMESbHaFMb3VR%25IeyFnJm3uyJR9lBguGH"
+                        alt="Image">
+                </div>
+                <div class="description">
+                    <h4 class="fw-light mb-0">BMW 740d M Sport</h4>
+                    <p class="fw-bold mb-1"
+                        style="background-color: black; color: white; padding: 3px; font-size: xx-small; width: 42px;">
+                        New Car</p>
+                    <div class="mx-2 mt-3 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">MONTHLY INSTALMENT</p>
+                            <p class="mb-0">$2,66,519</p>
+                        </div>
+                        <div style="height: 45px; width: 1px; background-color: rgb(180, 179, 179);"></div>
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">Test Label</p>
+                            <p class="mb-0">$1,87,20,000</p>
+                        </div>
+                    </div>
+                    <hr class="mx-2 my-2">
+                    <div class="mx-2 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <img src="https://img.freepik.com/premium-vector/fuel-logo-design-vector-illustration_742779-131.jpg?w=900"
+                                alt="fuel" style="width: 120px; height: auto;">
+                        </div>
+                        <div class="text-start p-0">
+                            <img src="https://ksa.motory.com/images/overview_icons/transmission.png" alt="transmission"
+                                style="width: 60px; height: auto;">
+                        </div>
+                    </div>
+                    <p class="fw-light mb-1 mx-2" style="font-size: x-small;">Fuel Type Gasoline</p>
+                    <hr class="mx-2 my-2">
+                    <div class="d-flex align-items-center mx-2 mt-2">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.tOe7wRwQg5iml6U-_gq8WAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="loc" style="width: 20px; height: 20px; margin-right: 6px;">
+                        <p class="fw-bold mb-0" style="font-size: x-small;">FU + MINI Gallops Autohaus Pvt. Ltd.
+                            Ahmedabad</p>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center justify-content-center">
+                        <button
+                            style="width: 90%; height: 35px; font-size: medium; border: 1px solid black; border-radius: 2px; font-weight: 400;">Show
+                            Vehicle details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-slider-box">
+                <div class="slider-container">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGU2YRAW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI51KbrQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCde90yJR0aWAyFnOauAyJRy8cYicHFpzMbnMdJgYyJGy5mgprQ%25r98QIW8zWubUsqogqaFbbl3ilURQzcRScHFBBMbnMdj%25OyJGy5Q3drQ%25r98R9W8zWuBwkqogqaRG5l3ilUE45cRScHemBMbnMdJ13yJGy5m3XrQ%25r9RXHW8zWubxGqogqa3Jnl3ilUR%256cRScH4g7MbnMdg30yJGy57RKrQ%25r9KbDW8zWuBYHqogqaRnal3ilURK0cRox9Dbg2drjGg3egrQbpJg1sW7%258KbUW8JaMESUz5"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFne5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaAB31rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNd6sRyJRIPPMESVQ1%253Fhs3%25cRot7Z%25z315W7%253ubDH457Mb37ur1MESVu91Mb3MQlBglUEO%25cRScHbzBMbnMdezOyJGy5QJNrQ%25r9RamW8zWuERRqogqa3J%25l3ilUE00cRScHFGVMbnMdJoHyJGy5Q35rQ%25r90vfW8zWu3ndqogqaYCdl3ilU4e0cRScHb6oMbnMdeoLyJGy53LUrQ%25r9RXnW8zWuobSqogqa3GIl3ilUCzjcRScHzo7MbnMdj3syJGy5sRKrQ%25r90BUW8zWu3Suqogqa3s7l38X5KRzAHyFnzo4zyJRObz6mrjGQsRarQbucYia%25d"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnz5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaAB31rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNd6sRyJRIPPMESnQr4axb7Gl382jTG%25o6drjGo9RKUCdjcRoj9y6cYiw956cRocJq0zqaYVGl3ilUR%250cRScH4%25VMbnMdJbtyJGy53uerQ%25r9Y33W8zWuobGqogqaY77l3ilUEnwcRScHb8UMbnMdJodyJGy57kprQ%25r9oSHW8zWuBDHqogqaC47l3ilURI8cRScH48PMbnMdoPayJGy53LSrQ%25r98RiW8zWuonNqogqaD%25Fl3ilU%258jcRScHFomMbnMdm3syJGy570arQ%25r9oi9W8zWuomjqoQLds3%251UMES%258C%25Mb3VR%25IeyFnJm3uyJR9lBguGH"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnJj9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGU2YRAW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI51KbrQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCde90yJR0aWAyFnOauAyJRy8cYicHFpzMbnMdJgYyJGy5mgprQ%25r98QIW8zWubUsqogqaFbbl3ilURQzcRScHFBBMbnMdj%25OyJGy5Q3drQ%25r98R9W8zWuBwkqogqaRG5l3ilUE45cRScHemBMbnMdJ13yJGy5m3XrQ%25r9RXHW8zWubxGqogqa3Jnl3ilUR%256cRScH4g7MbnMdg30yJGy57RKrQ%25r9KbDW8zWuBYHqogqaRnal3ilURK0cRox9Dbg2drjGg3egrQbpJg1sW7%258KbUW8JaMESUz5"
+                        alt="Image">
+                </div>
+                <div class="description">
+                    <h4 class="fw-light mb-0">BMW M4 CS</h4>
+                    <p class="fw-bold mb-1"
+                        style="background-color: black; color: white; padding: 3px; font-size: xx-small; width: 42px;">
+                        New Car</p>
+                    <div class="mx-2 mt-3 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">MONTHLY INSTALMENT</p>
+                            <p class="mb-0">$2,67,941</p>
+                        </div>
+                        <div style="height: 45px; width: 1px; background-color: rgb(180, 179, 179);"></div>
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">Test Label</p>
+                            <p class="mb-0">$1,89,90,000</p>
+                        </div>
+                    </div>
+                    <hr class="mx-2 my-2">
+                    <div class="mx-2 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <img src="https://img.freepik.com/premium-vector/fuel-logo-design-vector-illustration_742779-131.jpg?w=900"
+                                alt="fuel" style="width: 120px; height: auto;">
+                        </div>
+                        <div class="text-start p-0">
+                            <img src="https://ksa.motory.com/images/overview_icons/transmission.png" alt="transmission"
+                                style="width: 60px; height: auto;">
+                        </div>
+                    </div>
+                    <p class="fw-light mb-1 mx-2" style="font-size: x-small;">Fuel Type Gasoline</p>
+                    <hr class="mx-2 my-2">
+                    <div class="d-flex align-items-center mx-2 mt-2">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.tOe7wRwQg5iml6U-_gq8WAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="loc" style="width: 20px; height: 20px; margin-right: 6px;">
+                        <p class="fw-bold mb-0" style="font-size: x-small;">FU + BPS Deutsche Cars Pvt. Ltd. Faridabad
+                        </p>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center justify-content-center">
+                        <button
+                            style="width: 90%; height: 35px; font-size: medium; border: 1px solid black; border-radius: 2px; font-weight: 400;">Show
+                            Vehicle details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-slider-box">
+                <div class="slider-container">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGU%25q7fW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5ioorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdQ3uyJR0aWAyFnOauAyJRy8cYicHz83MbnMd0HUyJGy5QiErQ%25r9siwW8zWuESoqogqa3o1l3ilU%254JcRScHeN8MbnMdd8uyJGy5i6BrQ%25r98RnW8zWuEJ6qogqaYSvl3ilURQacRScH7zAMbnMdgCEyJGy5msbrQ%25r9SKFW8zWuDCjqogqa3NQl3ilUCQrcRScHFNzMbnMdgbayJGy5iYmrQ%25r9RXHW8zWuobSqogqa3GIl3ilURagcRScHzoBMbnMdgbEyJGy57RErQ%25r90bDW8zWuBNJqogqaYEdl3ilUjd5cRScH7o3Mb3huCJit5W7%25395fW8JfQiAKq0zoDJHqoQUyFnHg9"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFne5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaGWjprQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNdg88yJRIPPMESVQ1%253Fhs3%25cRot7Z%25z315W7%253ubDHJo9Mb37ur1MESVu91Mb3MQlBglU%25QocRScH7UaMbnMdJgYyJGy5mgvrQ%25r9Yi8W8zWuo86qogqaGCbl3ilU4tQcRScHHQ9MbnMdgI0yJGy5Q3SrQ%25r9YbIW8zWuBikqogqa3Jul3ilUj%251cRScHzDYMbnMdemRyJGy5isErQ%25r9KDFW8zWuotJqogqaDJyl3ilUEt%25cRScHzRuMbnMdgBeyJGy53LUrQ%25r98RiW8zWuonNqogqa3uzl3ilU%2580cRScHzRYMbnMdj3YyJGy57RKrQ%25r90tbW8zWuBYHqogqaFHdl3ilUj8ocRox9Dbg2drjGo5dprQbpJg1sW7%258KbUW8JaMESUz5"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnz5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaGWjprQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNdg88yJRIPPMESnQr4axb7Gl382jTG%25o6drjGo9RKUb85cRoj9y6cYiw956cRocJq0zqaGJ8l3ilUjaucRScHbzBMbnMdezkyJGy5BgQrQ%25r98QIW8zWunDRqogqaC2Jl3ilUUJ5cRScHzN7MbnMdJoiyJGy5BRNrQ%25r90gfW8zWuob9qogqaFG6l3ilU%25KBcRScH4e3MbnMdgmYyJGy5sKErQ%25r982bW8zWuKbMqogqaY2Gl3ilU%2539cRScHz04MbnMdoPayJGy5Q3grQ%25r98StW8zWuo9%25qogqaGQ7l3ilU%253BcRScHFoBMbnMdj3syJGy572RrQ%25r90BUW8zWuEUHqogqaFQ8l38X5KRzAHyFn8dHOyJRObz6mrjGQsRarQbucYia%25d"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnJj9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGU%25q7fW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5ioorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJCdQ3uyJR0aWAyFnOauAyJRy8cYicHz83MbnMd0HUyJGy5QiErQ%25r9siwW8zWuESoqogqa3o1l3ilU%254JcRScHeN8MbnMdd8uyJGy5i6BrQ%25r98RnW8zWuEJ6qogqaYSvl3ilURQacRScH7zAMbnMdgCEyJGy5msbrQ%25r9SKFW8zWuDCjqogqa3NQl3ilUCQrcRScHFNzMbnMdgbayJGy5iYmrQ%25r9RXHW8zWuobSqogqa3GIl3ilURagcRScHzoBMbnMdgbEyJGy57RErQ%25r90bDW8zWuBNJqogqaYEdl3ilUjd5cRScH7o3Mb3huCJit5W7%25395fW8JfQiAKq0zoDJHqoQUyFnHg9"
+                        alt="images">
+                </div>
+                <div class="description">
+                    <h4 class="fw-light mb-0">BMW 530Li M Sport</h4>
+                    <p class="fw-bold mb-1"
+                        style="background-color: black; color: white; padding: 3px; font-size: xx-small; width: 42px;">
+                        New Car</p>
+                    <div class="mx-2 mt-3 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">MONTHLY INSTALMENT</p>
+                            <p class="mb-0">$75,495</p>
+                        </div>
+                        <div style="height: 45px; width: 1px; background-color: rgb(180, 179, 179);"></div>
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">Test Label</p>
+                            <p class="mb-0">$74,40,000</p>
+                        </div>
+                    </div>
+                    <hr class="mx-2 my-2">
+                    <div class="mx-2 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <img src="https://img.freepik.com/premium-vector/fuel-logo-design-vector-illustration_742779-131.jpg?w=900"
+                                alt="fuel" style="width: 120px; height: auto;">
+                        </div>
+                        <div class="text-start p-0">
+                            <img src="https://ksa.motory.com/images/overview_icons/transmission.png" alt="transmission"
+                                style="width: 60px; height: auto;">
+                        </div>
+                    </div>
+                    <p class="fw-light mb-1 mx-2" style="font-size: x-small;">Fuel Type Gasoline</p>
+                    <hr class="mx-2 my-2">
+                    <div class="d-flex align-items-center mx-2 mt-2">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.tOe7wRwQg5iml6U-_gq8WAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="loc" style="width: 20px; height: 20px; margin-right: 6px;">
+                        <p class="fw-bold mb-0" style="font-size: x-small;">FU Eminent Cars Pvt. Ltd. Surat</p>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center justify-content-center">
+                        <button
+                            style="width: 90%; height: 35px; font-size: medium; border: 1px solid black; border-radius: 2px; font-weight: 400;">Show
+                            Vehicle details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-slider-box">
+                <div class="slider-container">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFn7o9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUPi1BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5ioorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJ%25dd8RyJR0aWAyFnOauAyJRy8cYicHbzBMbnMdezkyJGy57qirQ%25r9Yi8W8zWun3Jqogqa3o1l3ilUUvdcRScHbUYMbnMdd8uyJGy5i6orQ%25r9S1aW8zWuBikqogqaC47l3ilUj4JcRScH8ZuMbnMdJozyJGy5Qd3rQ%25r9S5GW8zWun9CqogqaFkJl3ilUE80cRScH4g7MbnMdgH2yJGy58gprQ%25r9SbYW8zWun9kqogqaYQ4l3ilUjGwcRScH759MbnMdgoRyJGy5sibrQ%25r99uDW8zWuDAbqogqaYC7l3ilU4tocRScH705MbnMdJoiyJGy5ioorQ%25r98R5W8zWunDjqogqaRGul3ilUE45cRScH8Q3MbnMdgmSyJGy5BiirQ%25r9SESW8zWuotJqogqaDJyl3ilUEt%25cRScHFNHMbnMdoIayJGy5Qi2rQ%25r9o5CW8zWuomUqogqaY2Tl3ilU48ecRScHF1oMbnMdg43yJGy570arQ%25r99oUW8zWuomjqoQLds3%251UMESbHaFMb3VR%25IeyFnJm3uyJR9lBguGH"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFne5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaZg60rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNdg88yJRIPPMESVQ1%253Fhs3%25cRot7Z%25z315W7%253ubGHHQ3Mb37ur1MESVu91Mb3MQlBglUR%250cRScH4%25fMbnMdjWgyJGy5BgQrQ%25r9SobW8zWuo86qogqaakHl3ilURaBcRScHHQ9MbnMdgI8yJGy5i6urQ%25r90gfW8zWuDCjqogqaFCbl3ilUQT9cRScHb8%25MbnMdJHoyJGy5idnrQ%25r9S5DW8zWuEfbqogqaYQ7l3ilUCzjcRScHzUAMbnMdQzOyJGy5iRBrQ%25r9S5fW8zWuBJCqogqaFnvl3ilUjd5cRScHz83MbnMdmgRyJGy559KrQ%25r9K1RW8zWuBDjqogqaC28l3ilUj7dcRScHb8gMbnMdg88yJGy5Q3drQ%25r9SKFW8zWu3n9qogqaYCdl3ilUQJocRScHzeiMbnMd0ggyJGy5iYirQ%25r982bW8zWuKbMqogqaY2Gl3ilUEtUcRScH8NuMbnMdJgAyJGy58dDrQ%25r98eaW8zWuBAhqogqaCQ4l3ilUE68cRScHzCoMbnMdj7uyJGy558arQ%25r98eFW8JPHmoG6acYiRUuEcRow3GN4MESbeo9Mb35q0z9nU"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnz5cRoHSWRzMES208bq2b7uRIMb3d08bgyFnO9uOyJR%251JHQAW7%25bLShW8Jg41rjGQcRo9J5BJiyFnaZg60rQbCcYiCjH5cRofJ0GU6yFnRRcRotJRRIMESNdg88yJRIPPMESnQr4axb7Gl382jTG%25o6drjGo9RnUUJocRoj9y6cYiw956cRocJq0zqa3G7l3ilUCGpcRScHFrzMbnMd0zJyJGy5i8RrQ%25r98QIW8zWuufUqogqa3u0l3ilUUJ5cRScHzNQMbnMdgI9yJGy57zprQ%25r9KDFW8zWuEDRqogqaJh5l3ilURQGcRScHbU8MbnMdgHSyJGy5idKrQ%25r9YpRW8zWuBJjqogqaD%25Fl3ilU%25a1cRScHJ%25VMbnMdg30yJGy5idprQ%25r90bDW8zWuESkqogqaFHdl3ilU%25QocRScHez3MbnMdd5syJGy5s63rQ%25r90KFW8zWuDAQqogqaFjHl3ilURQzcRScHzQQMbnMdJoHyJGy5isErQ%25r9oS5W8zWuBDHqogqaJb8l3ilU%254gcRScH7zzMbnMdgBgyJGy5QARrQ%25r9sRcW8zWuBAnqogqaY2al3ilUQt9cRScHbz1MbnMdQHKyJGy5Q4urQ%25r901xW8zWuDJCqogqaYIQl3ilU%25D8cRScHFj9MbnMddQuyJGy5Q4ErQbZUe8nIulBg3a9Yl38vontCcYiR485cRodW7%255Sa"
+                        alt="Image">
+                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545J3qAHyFnJj9Mb3dnqbgyFntBoJltJ0ab6yJR5BoJirjGpuaprQbzAQd82q0zJXnTqoQieAW7%258Mb3uQ9YQSrjGUPi1BW8J4MES47d9Mb3kQB%25H1rjGbbMb3NQbb6yFnI5ioorQb6LLyFnO8AzRjTKRzMb3N0PzgRA9q0zRaJ%25dd8RyJR0aWAyFnOauAyJRy8cYicHbzBMbnMdezkyJGy57qirQ%25r9Yi8W8zWun3Jqogqa3o1l3ilUUvdcRScHbUYMbnMdd8uyJGy5i6orQ%25r9S1aW8zWuBikqogqaC47l3ilUj4JcRScH8ZuMbnMdJozyJGy5Qd3rQ%25r9S5GW8zWun9CqogqaFkJl3ilUE80cRScH4g7MbnMdgH2yJGy58gprQ%25r9SbYW8zWun9kqogqaYQ4l3ilUjGwcRScH759MbnMdgoRyJGy5sibrQ%25r99uDW8zWuDAbqogqaYC7l3ilU4tocRScH705MbnMdJoiyJGy5ioorQ%25r98R5W8zWunDjqogqaRGul3ilUE45cRScH8Q3MbnMdgmSyJGy5BiirQ%25r9SESW8zWuotJqogqaDJyl3ilUEt%25cRScHFNHMbnMdoIayJGy5Qi2rQ%25r9o5CW8zWuomUqogqaY2Tl3ilU48ecRScHF1oMbnMdg43yJGy570arQ%25r99oUW8zWuomjqoQLds3%251UMESbHaFMb3VR%25IeyFnJm3uyJR9lBguGH"
+                        alt="Image">
+                </div>
+                <div class="description">
+                    <h4 class="fw-light mb-0">BMW 740d M Sport</h4>
+                    <p class="fw-bold mb-1"
+                        style="background-color: black; color: white; padding: 3px; font-size: xx-small; width: 42px;">
+                        New Car</p>
+                    <div class="mx-2 mt-3 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">MONTHLY INSTALMENT</p>
+                            <p class="mb-0">$2,66,519</p>
+                        </div>
+                        <div style="height: 45px; width: 1px; background-color: rgb(180, 179, 179);"></div>
+                        <div class="text-start p-0">
+                            <p class="fw-light mb-0" style="font-size: x-small;">Test Label</p>
+                            <p class="mb-0">$1,87,20,000</p>
+                        </div>
+                    </div>
+                    <hr class="mx-2 my-2">
+                    <div class="mx-2 d-flex align-items-center justify-content-center" style="gap: 20px;">
+                        <div class="text-start p-0">
+                            <img src="https://img.freepik.com/premium-vector/fuel-logo-design-vector-illustration_742779-131.jpg?w=900"
+                                alt="fuel" style="width: 120px; height: auto;">
+                        </div>
+                        <div class="text-start p-0">
+                            <img src="https://ksa.motory.com/images/overview_icons/transmission.png" alt="transmission"
+                                style="width: 60px; height: auto;">
+                        </div>
+                    </div>
+                    <p class="fw-light mb-1 mx-2" style="font-size: x-small;">Fuel Type Gasoline</p>
+                    <hr class="mx-2 my-2">
+                    <div class="d-flex align-items-center mx-2 mt-2">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.tOe7wRwQg5iml6U-_gq8WAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="loc" style="width: 20px; height: 20px; margin-right: 6px;">
+                        <p class="fw-bold mb-0" style="font-size: x-small;">FU Eminent Cars Pvt. Ltd. Surat</p>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center justify-content-center">
+                        <button
+                            style="width: 90%; height: 35px; font-size: medium; border: 1px solid black; border-radius: 2px; font-weight: 400;">Show
+                            Vehicle details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-white text-dark pt-4 border-top">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 border-bottom">
+            <div class="d-flex align-items-center gap-3">
+                <img src="https://www.bmw.in/content/dam/bmw/common/images/logo-icons/BMW/BMW_Grey-Colour_RGB.SVG.asset.1697707041685.SVG"
+                    alt="BMW Logo" style="height: 50px;">
+                <span class="fw-medium fs-6">Stay up to date with the latest news from BMW</span>
+            </div>
+            <button class="btn btn-sm">Sign up ></button>
+        </div>
+
+        <div class="container py-4">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h5>Contact & Info</h5>
+                    <ul class="list-unstyled">
+                        <li>Customer support</li>
+                        <li>Online Genius (FAQ)</li>
+                        <li>Accident Support</li>
+                        <li>Request for Offer</li>
+                        <li>Find a Dealer</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Assistance & Services</h5>
+                    <ul class="list-unstyled">
+                        <li>Book a Service Appointment</li>
+                        <li>MY BMW App</li>
+                        <li>Connected Drive</li>
+                        <li>Warranties</li>
+                        <li>Remote Software Upgrades</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Models</h5>
+                    <ul class="list-unstyled">
+                        <li>BMW X series</li>
+                        <li>BMW 7 series</li>
+                        <li>BMW 5 series</li>
+                        <li>BMW 3 series</li>
+                        <li>BMW 2 series</li>
+                        <li>BMW M series</li>
+                        <li>BMW Concept Cars</li>
+                        <li>BMW Protection Vehicles</li>
+                        <li>GKL Cars</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h5>Experience BMW</h5>
+                    <ul class="list-unstyled">
+                        <li>About us</li>
+                        <li>BMW careers</li>
+                        <li>BMW.com</li>
+                        <li>BMW Group</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Choose & Buy</h5>
+                    <ul class="list-unstyled">
+                        <li>Build your Own</li>
+                        <li>New Cars Search</li>
+                        <li>Pre-Book and Exclusive Editions</li>
+                        <li>BMW Financial Services</li>
+                        <li>Finance & Leasing</li>
+                        <li>BMW Offers</li>
+                        <li>Book a Test Drive</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>BMW Electric Cars</h5>
+                    <ul class="list-unstyled">
+                        <li>BMW Electric Vehicles</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end social-icons mb-3">
+                <a href="https://www.facebook.com/bmwindia"><i class="fa-brands fa-facebook mx-2"></i></a>
+                <a href="https://www.instagram.com/bmwindia_official/"><i class="fa-brands fa-instagram mx-2"
+                        style="color: #ee3ad6;"></i></a>
+                <a href="https://www.youtube.com/user/bmwindia"><i class="fa-brands fa-youtube mx-2"
+                        style="color: red;"></i></a>
+                <a href="https://in.linkedin.com/showcase/bmw-india/"><i class="fa-brands fa-linkedin mx-2"
+                        style="color: #0370c4;"></i></a>
+                <a href="https://x.com/bmwindia"><i class="fa-brands fa-x-twitter mx-2" style="color: black;"></i></a>
+            </div>
+
+            <div class="footer-bottom d-flex flex-wrap justify-content-center align-items-center gap-3 pt-3 border-top">
+                <p class="mb-0">© BMW AG 2025</p>
+                <p class="mb-0">Legal Disclaimer/Imprint</p>
+                <p class="mb-0">Privacy Policy</p>
+                <p class="mb-0">Contact Us</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
